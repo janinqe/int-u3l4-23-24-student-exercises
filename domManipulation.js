@@ -22,9 +22,9 @@ let image = document.querySelector('.image');
 //   - The `location` paragraph.
 
 contentButton.addEventListener('click', function() {
-
-
-
+myName.innerHTML="My name is Janine";
+myHobby.innerHTML="I like to draw"
+myLocation.innerHTML="I live in Jackson Heights"
 
 
 
@@ -32,14 +32,21 @@ contentButton.addEventListener('click', function() {
 
 // 3. Add an event listener to the `image1Button`
 // 4. When clicked, it should change the source of `image` to another image URL.
-
+image1Button.addEventListener("click", function(){
+  image.src="https://i.pinimg.com/originals/56/ea/54/56ea547e101bf9fe4418d066d73511c7.jpg"
+})
 
 
 
 
 // 5. Add an event listener to the `image2Button`
 // 6. When clicked, it should change the source of `image` to another image URL.
-
-
+image2Button.addEventListener("click", function(){
+image.src="https://static.vecteezy.com/system/resources/previews/022/400/509/non_2x/funny-cow-with-sunglasses-sky-blue-background-generative-ai-digital-art-illustration-photo.jpeg"
+})
 // BONUS
 // 7. Try using different event types for your buttons.
+image2Button.addEventListener("mouseover", function(){
+image2Button.style.color="pink"
+                      
+})
